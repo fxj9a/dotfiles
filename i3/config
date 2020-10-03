@@ -261,15 +261,15 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10 # decrease
 #########################
 # play/pause
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
-bindsym F8 exec --no-startup-id playerctl play-pause
+#bindsym F8 exec --no-startup-id playerctl play-pause
 #conextmenu btn (play/pause)
 bindcode 135 exec --no-startup-id playerctl play-pause 
 # next
 bindsym XF86AudioNext exec --no-startup-id playerctl next
-bindsym F9 exec --no-startup-id playerctl next
+#bindsym F9 exec --no-startup-id playerctl next
 # previous
 bindsym XF86AudioPrev exec --no-startup-id playerctl previous
-bindsym F7 exec --no-startup-id playerctl previous
+#bindsym F7 exec --no-startup-id playerctl previous
 
 # shortcuts for most used programs
 bindsym --release Mod1+Mod4+p exec --no-startup-id scrot -s '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/scrots/'
