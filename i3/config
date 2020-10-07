@@ -303,7 +303,7 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 
-bindsym Mod4+Shift+l "$mode_system"
+bindsym Mod4+Shift+l mode "$mode_system"
 
 # NO screensaver
 exec --no-startup-id xset s noblank
