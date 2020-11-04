@@ -9,3 +9,10 @@ function wtr
   end
   curl $query
 end
+
+function k
+  echo "Ctrl+D to exit"
+  while read -l k_mycommand -P "kaput> "
+  	kaput $k_mycommand
+  end
+end
