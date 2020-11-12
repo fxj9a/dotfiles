@@ -275,9 +275,9 @@ bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 bindsym --release Mod1+Mod4+p exec --no-startup-id scrot -s '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/scrots/'
 bindsym Mod1+Mod4+k exec --no-startup-id firefox
 bindsym Mod1+Mod4+g exec --no-startup-id chromium --force-dark-mode
-bindsym Mod1+Mod4+h exec --no-startup-id chromium nautilus
-bindsym Mod1+Mod4+Shift+h exec --no-startup-id chromium thunar
-bindsym Mod1+Mod4+s exec --no-startup-id chromium com.spotify.Client
+bindsym Mod1+Mod4+h exec --no-startup-id nautilus
+bindsym Mod1+Mod4+Shift+h exec --no-startup-id thunar
+bindsym Mod1+Mod4+s exec --no-startup-id com.spotify.Client
 bindsym Mod1+Mod4+l exec --no-startup-id pavucontrol
 bindsym Mod1+Mod4+j exec --no-startup-id steam
 
