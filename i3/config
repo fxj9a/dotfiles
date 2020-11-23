@@ -58,15 +58,15 @@ floating_modifier Mod1
 #bindsym Mod1+Return exec i3-sensible-terminal
 
 # start insensible terminal  as default terminal with Mod+Return
-bindsym Mod1+Return exec lxterminal
+bindsym Mod1+Return exec lxterminal -e "fish"
 bindsym Mod1+Mod4+Shift+Escape exec poweroff
 
 # kill focused window
-bindsym Mod1+Shift+q kill
+bindsym Mod1+Shift+a kill
 
 # start dmenu (a program launcher)
-bindsym Mod1+Shift+d exec i3-dmenu-desktop
-bindsym Mod1+d exec rofi -show run
+bindsym Mod1+Shift+d exec bemenu-run
+bindsym Mod4+space exec rofi -show run
 exec --no-startup-id xrdb ~/.Xresources
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -117,9 +117,9 @@ bindsym Mod1+v split v
 bindsym Mod1+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym Mod1+s layout stacking
-bindsym Mod1+w layout tabbed
-bindsym Mod1+e layout toggle split
+bindsym Mod1+a layout stacking
+bindsym Mod1+s layout tabbed
+bindsym Mod1+d layout toggle split
 
 # toggle tiling / floating
 bindsym Mod1+Shift+space floating toggle
@@ -128,7 +128,7 @@ bindsym Mod1+Shift+space floating toggle
 bindsym Mod1+space focus mode_toggle
 
 # focus the parent container
-bindsym Mod1+a focus parent
+bindsym Mod1+z focus parent
 
 # focus the child container
 #bindsym Mod1+d focus child
@@ -141,35 +141,35 @@ bindsym Mod1+Shift+minus move scratchpad
 bindsym Mod1+minus scratchpad show
 
 # switch to workspace
-bindsym Mod1+1 workspace $tag1
-bindsym Mod1+2 workspace $tag2
-bindsym Mod1+3 workspace $tag3
-bindsym Mod1+4 workspace $tag4
-bindsym Mod1+5 workspace $tag5
-bindsym Mod1+6 workspace $tag6
-bindsym Mod1+7 workspace $tag7
-bindsym Mod1+8 workspace $tag8
-bindsym Mod1+9 workspace $tag9
-bindsym Mod1+0 workspace $tag10
+bindsym Mod1+q workspace $tag1
+bindsym Mod1+w workspace $tag2
+bindsym Mod1+e workspace $tag3
+bindsym Mod1+r workspace $tag4
+bindsym Mod1+t workspace $tag5
+bindsym Mod1+y workspace $tag6
+bindsym Mod1+u workspace $tag7
+bindsym Mod1+i workspace $tag8
+bindsym Mod1+o workspace $tag9
+bindsym Mod1+p workspace $tag10
 
 # move focused container to workspace
-bindsym Mod1+Shift+1 move container to workspace $tag1
-bindsym Mod1+Shift+2 move container to workspace $tag2
-bindsym Mod1+Shift+3 move container to workspace $tag3
-bindsym Mod1+Shift+4 move container to workspace $tag4
-bindsym Mod1+Shift+5 move container to workspace $tag5
-bindsym Mod1+Shift+6 move container to workspace $tag6
-bindsym Mod1+Shift+7 move container to workspace $tag7
-bindsym Mod1+Shift+8 move container to workspace $tag8
-bindsym Mod1+Shift+9 move container to workspace $tag9
-bindsym Mod1+Shift+0 move container to workspace $tag10
+bindsym Mod1+Shift+q move container to workspace $tag1
+bindsym Mod1+Shift+w move container to workspace $tag2
+bindsym Mod1+Shift+e move container to workspace $tag3
+bindsym Mod1+Shift+r move container to workspace $tag4
+bindsym Mod1+Shift+t move container to workspace $tag5
+bindsym Mod1+Shift+y move container to workspace $tag6
+bindsym Mod1+Shift+u move container to workspace $tag7
+bindsym Mod1+Shift+i move container to workspace $tag8
+bindsym Mod1+Shift+o move container to workspace $tag9
+bindsym Mod1+Shift+p move container to workspace $tag10
 
 # reload the configuration file
 bindsym Mod1+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym Mod1+Shift+r restart
+bindsym Mod1+Shift+v restart
 # exit i3 (logs you out of your X session)
-bindsym Mod1+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym Mod1+Shift+m exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -195,7 +195,7 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 
-bindsym Mod1+r mode "resize"
+bindsym Mod1+m mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -217,7 +217,7 @@ new_window pixel 1
 # keysym-based config which used their favorite modifier (alt or windows)
 #
 # i3-config-wizard will not launch if there already is a config file
-# in ~/.i3/config.
+# in ~/.config/i3/config.
 #
 # Please remove the following exec line:
 #######################################################################
@@ -230,7 +230,8 @@ new_window pixel 1
 #workspace 2 output eDP1
 
 #window transparency
-exec_always --no-startup-id xcompmgr -c -C
+#exec_always --no-startup-id xcompmgr -c -C
+exec_always --no-startup-id picom -b -f -c -C
 ####################
 ## BACKGROUND PIC ##
 ####################
@@ -247,9 +248,9 @@ exec --no-startup-id synclient VertScrollDelta=-110
 exec --no-startup-id synclient HorizScrollDelta=-110
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10 # increase screen brightness
@@ -260,29 +261,28 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10 # decrease
 #########################
 # play/pause
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
-bindsym F8 exec --no-startup-id playerctl play-pause
+#bindsym F8 exec --no-startup-id playerctl play-pause
 #conextmenu btn (play/pause)
 bindcode 135 exec --no-startup-id playerctl play-pause 
 # next
 bindsym XF86AudioNext exec --no-startup-id playerctl next
-bindsym F9 exec --no-startup-id playerctl next
+#bindsym F9 exec --no-startup-id playerctl next
 # previous
 bindsym XF86AudioPrev exec --no-startup-id playerctl previous
-bindsym F7 exec --no-startup-id playerctl previous
+#bindsym F7 exec --no-startup-id playerctl previous
 
 # shortcuts for most used programs
 bindsym --release Mod1+Mod4+p exec --no-startup-id scrot -s '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/scrots/'
-bindsym Mod1+Mod4+k exec firefox
-bindsym Mod1+Mod4+g exec google-chrome-stable --force-dark-mode
-bindsym Mod1+Mod4+h exec thunar
-bindsym Mod1+Mod4+s exec spotify
+bindsym Mod1+Mod4+k exec --no-startup-id firefox
+bindsym Mod1+Mod4+g exec --no-startup-id chromium --force-dark-mode
+bindsym Mod1+Mod4+h exec --no-startup-id nautilus
+bindsym Mod1+Mod4+Shift+h exec --no-startup-id thunar
+bindsym Mod1+Mod4+s exec --no-startup-id com.spotify.Client
 bindsym Mod1+Mod4+l exec --no-startup-id pavucontrol
 bindsym Mod1+Mod4+j exec --no-startup-id steam
-bindsym Mod1+Mod4+q exec --no-startup-id qutebrowser
 
 # 1080p-settings
-#bindsym Mod4+l exec --no-startup-id i3lock -i ~/.i3/i3locked1920x1080.jpg
-#bindsym XF86Launch1 exec --no-startup-id i3lock -i ~/.i3/i3locked1920x1080.jpg
+#bindsym Mod4+l exec --no-startup-id i3lock -i ~/.config/i3/i3locked1920x1080.jpg
 
 # X220 settings
 bindsym Mod4+l exec --no-startup-id i3lock -i ~/.i3/i3locked1366x768.png
@@ -303,7 +303,7 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 
-bindsym $mod+Pause mode "$mode_system"
+bindsym Mod4+BackSpace mode "$mode_system"
 
 # NO screensaver
 exec --no-startup-id xset s noblank
@@ -311,8 +311,7 @@ exec --no-startup-id xscreensaver -no-splash
 # redshift (like f.lux)
 #exec --no-startup-id redshift-gtk
 
-#battery notification with xfce power manager
-exec --no-startup-id xfce4-power-manager
+exec --no-startup-id redshift-gtk
 
 #make Spotify work :) //since ver1.x not necessary anymore
 #for_window [class="^Spotify$"] floating enable
@@ -323,7 +322,9 @@ exec --no-startup-id xfce4-power-manager
 #bindsym Mod2+Shift+p exec setxkbmap us
 
 #Keyboard config
-exec --no-startup-id /home/adrian/xcapes
+exec --no-startup-id /home/adrian/.config/xcapes
+
+#exec --no-startup-id /home/adrian/.screenlayout/hdmionly.sh
 #exec /usr/bin/setxkbmap -option ctrl:nocaps
 #exec /usr/bin/xcape -e 'Control_L=Escape'
 exec --no-startup-id espeak "hello" && mpv /home/adrian/oxp.wav
