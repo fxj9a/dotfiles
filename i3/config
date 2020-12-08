@@ -230,8 +230,8 @@ new_window pixel 1
 #workspace 2 output eDP1
 
 #window transparency
-#exec_always --no-startup-id xcompmgr -c -C
-exec_always --no-startup-id picom -b -f -c -C
+exec_always --no-startup-id xcompmgr -c -C
+#exec_always --no-startup-id picom -b -f -c -C
 ####################
 ## BACKGROUND PIC ##
 ####################
