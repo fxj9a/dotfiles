@@ -1,14 +1,15 @@
 [global]
-username = eidoriandesu
-password_cmd = pass spotify.com/eidoriandesu
+username = "eidoriandesu"
+password_cmd = "pass spotify.com/eidoriandesu"
 use_keyring = false
-backend = alsa
-device = default
-mixer = PCM
-volume_controller = alsa
-device_name = serenity
+use_mpris = true
+backend = "alsa"
+# device = "default"
+# zmixer = "PCM"
+volume_controller = "softvol"
+device_name = "serenity"
 bitrate = 320
-cache_path = /home/adrian/.cache/spotifyd
+cache_path = "/home/adrian/.cache/spotifyd"
 no_audio_cache = false
 volume_normalisation = false
-device_type = computer
+device_type = "computer"
