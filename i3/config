@@ -58,7 +58,10 @@ floating_modifier Mod1
 #bindsym Mod1+Return exec i3-sensible-terminal
 
 # start insensible terminal  as default terminal with Mod+Return
-bindsym Mod1+Return exec kitty
+#bindsym Mod1+Return exec kitty
+bindsym Mod1+Return exec lxterminal
+
+
 bindsym Mod1+Mod4+Shift+Escape exec poweroff
 
 # kill focused window
@@ -164,6 +167,20 @@ bindsym Mod1+Shift+i move container to workspace $tag8
 bindsym Mod1+Shift+o move container to workspace $tag9
 bindsym Mod1+Shift+p move container to workspace $tag10
 
+# move container to output
+bindsym Mod4+Shift+$left move container to output left
+bindsym Mod4+Shift+$right move container to output right
+
+
+# move workspace to ouput
+bindsym Mod4+$left move workspace to output left
+bindsym Mod4+$right move workspace to output right
+
+#swap workspaces on outputs
+
+bindsym Mod4+Tab move workspace to output left; workspace next_on_output; move workspace to output right;
+bindsym Mod4+Shift+Tab move workspace to output right; workspace next_on_output; move workspace to output left;
+
 # reload the configuration file
 bindsym Mod1+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -202,6 +219,7 @@ bindsym Mod1+m mode "resize"
 bar {
   strip_workspace_numbers yes
   position top
+    tray_output primary
     status_command py3status -c  ~/.config/i3/i3status.conf
     colors {
       statusline #CCCCCC
@@ -277,7 +295,7 @@ bindsym Mod1+Mod4+k exec --no-startup-id firefox
 bindsym Mod1+Mod4+g exec --no-startup-id chromium --force-dark-mode
 bindsym Mod1+Mod4+h exec --no-startup-id nautilus
 bindsym Mod1+Mod4+Shift+h exec --no-startup-id thunar
-bindsym Mod1+Mod4+s exec --no-startup-id com.spotify.Client
+bindsym Mod1+Mod4+Shift+s exec --no-startup-id com.spotify.Client
 bindsym Mod1+Mod4+l exec --no-startup-id pavucontrol
 bindsym Mod1+Mod4+j exec --no-startup-id steam
 
@@ -309,9 +327,8 @@ bindsym Mod4+BackSpace mode "$mode_system"
 exec --no-startup-id xset s noblank
 exec --no-startup-id xscreensaver -no-splash
 # redshift (like f.lux)
-#exec --no-startup-id redshift-gtk
+exec --no-startup-id redshift-gtk -l 51:12
 
-exec --no-startup-id redshift-gtk
 
 #make Spotify work :) //since ver1.x not necessary anymore
 #for_window [class="^Spotify$"] floating enable
