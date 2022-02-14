@@ -55,77 +55,77 @@ set $right semicolon
 floating_modifier Mod1
 
 # start a terminal
-#bindsym Mod1+Return exec i3-sensible-terminal
+#bindsym Mod4+Return exec i3-sensible-terminal
 
 # start insensible terminal  as default terminal with Mod+Return
-#bindsym Mod1+Return exec kitty
-bindsym Mod1+Return exec lxterminal
+#bindsym Mod4+Return exec kitty
+bindsym Mod4+Return exec lxterminal
 
 
 bindsym Mod1+Mod4+Shift+Escape exec poweroff
 
 # kill focused window
-bindsym Mod1+Shift+a kill
+bindsym Mod4+Shift+a kill
 
 # start dmenu (a program launcher)
-bindsym Mod1+Shift+d exec bemenu-run
+bindsym Mod4+Shift+d exec bemenu-run
 bindsym Mod4+space exec rofi -show run
 exec --no-startup-id xrdb ~/.Xresources
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-# bindsym Mod1+d exec --no-startup-id i3-dmenu-desktop
+# bindsym Mod4+d exec --no-startup-id i3-dmenu-desktop
 
 # quickly tab through workspaces
-bindsym Mod1+Tab workspace next_on_output
+bindsym Mod4+Tab workspace next_on_output
 # REV UP THOSE FRYERS!
-bindsym Mod1+Shift+Tab workspace prev_on_output
+bindsym Mod4+Shift+Tab workspace prev_on_output
 
-# get to prev workspace when hitting Mod1+<number of current workspace> again
+# get to prev workspace when hitting Mod4+<number of current workspace> again
 workspace_auto_back_and_forth yes
 
 
 # change focus
-bindsym Mod1+$left focus left
-bindsym Mod1+$down focus down
-bindsym Mod1+$up focus up
-bindsym Mod1+$right focus right
+bindsym Mod4+$left focus left
+bindsym Mod4+$down focus down
+bindsym Mod4+$up focus up
+bindsym Mod4+$right focus right
 
 # alternatively, you can use the cursor keys:
-bindsym Mod1+Left focus left
-bindsym Mod1+Down focus down
-bindsym Mod1+Up focus up
-bindsym Mod1+Right focus right
+bindsym Mod4+Left focus left
+bindsym Mod4+Down focus down
+bindsym Mod4+Up focus up
+bindsym Mod4+Right focus right
 
 # move focused window
-bindsym Mod1+Shift+$left move left
-bindsym Mod1+Shift+$down move down
-bindsym Mod1+Shift+$up move up
-bindsym Mod1+Shift+$right move right
+bindsym Mod4+Shift+$left move left
+bindsym Mod4+Shift+$down move down
+bindsym Mod4+Shift+$up move up
+bindsym Mod4+Shift+$right move right
 
 # alternatively, you can use the cursor keys:
-bindsym Mod1+Shift+Left move left
+bindsym Mod4+Shift+Left move left
 
-bindsym Mod1+Shift+Down move down
-bindsym Mod1+Shift+Up move up
-bindsym Mod1+Shift+Right move right
+bindsym Mod4+Shift+Down move down
+bindsym Mod4+Shift+Up move up
+bindsym Mod4+Shift+Right move right
 
 # split in horizontal orientation
-bindsym Mod1+h split h
+bindsym Mod4+h split h
 
 # split in vertical orientation
-bindsym Mod1+v split v
+bindsym Mod4+v split v
 
 # enter fullscreen mode for the focused container
-bindsym Mod1+f fullscreen toggle
+bindsym Mod4+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym Mod1+a layout stacking
-bindsym Mod1+s layout tabbed
-bindsym Mod1+d layout toggle split
+bindsym Mod4+a layout stacking
+bindsym Mod4+s layout tabbed
+bindsym Mod4+d layout toggle split
 
 # toggle tiling / floating
-bindsym Mod1+Shift+space floating toggle
+bindsym Mod4+Shift+space floating toggle
 
 # change focus between tiling / floating windows
 bindsym Mod1+space focus mode_toggle
@@ -137,56 +137,56 @@ bindsym Mod1+z focus parent
 #bindsym Mod1+d focus child
 
 # move the currently focused window to the scratchpad
-bindsym Mod1+Shift+minus move scratchpad
+bindsym Mod4+Shift+minus move scratchpad
 
 # Show the next scratchpad window or hide the focused scratchpad window.
 # If there are multiple scratchpad windows, this command cycles through them.
-bindsym Mod1+minus scratchpad show
+bindsym Mod4+minus scratchpad show
 
 # switch to workspace
-bindsym Mod1+q workspace $tag1
-bindsym Mod1+w workspace $tag2
-bindsym Mod1+e workspace $tag3
-bindsym Mod1+r workspace $tag4
-bindsym Mod1+t workspace $tag5
-bindsym Mod1+y workspace $tag6
-bindsym Mod1+u workspace $tag7
-bindsym Mod1+i workspace $tag8
-bindsym Mod1+o workspace $tag9
-bindsym Mod1+p workspace $tag10
+bindsym Mod4+q workspace $tag1
+bindsym Mod4+w workspace $tag2
+bindsym Mod4+e workspace $tag3
+bindsym Mod4+r workspace $tag4
+bindsym Mod4+t workspace $tag5
+bindsym Mod4+y workspace $tag6
+bindsym Mod4+u workspace $tag7
+bindsym Mod4+i workspace $tag8
+bindsym Mod4+o workspace $tag9
+bindsym Mod4+p workspace $tag10
 
 # move focused container to workspace
-bindsym Mod1+Shift+q move container to workspace $tag1
-bindsym Mod1+Shift+w move container to workspace $tag2
-bindsym Mod1+Shift+e move container to workspace $tag3
-bindsym Mod1+Shift+r move container to workspace $tag4
-bindsym Mod1+Shift+t move container to workspace $tag5
-bindsym Mod1+Shift+y move container to workspace $tag6
-bindsym Mod1+Shift+u move container to workspace $tag7
-bindsym Mod1+Shift+i move container to workspace $tag8
-bindsym Mod1+Shift+o move container to workspace $tag9
-bindsym Mod1+Shift+p move container to workspace $tag10
+bindsym Mod4+Shift+q move container to workspace $tag1
+bindsym Mod4+Shift+w move container to workspace $tag2
+bindsym Mod4+Shift+e move container to workspace $tag3
+bindsym Mod4+Shift+r move container to workspace $tag4
+bindsym Mod4+Shift+t move container to workspace $tag5
+bindsym Mod4+Shift+y move container to workspace $tag6
+bindsym Mod4+Shift+u move container to workspace $tag7
+bindsym Mod4+Shift+i move container to workspace $tag8
+bindsym Mod4+Shift+o move container to workspace $tag9
+bindsym Mod4+Shift+p move container to workspace $tag10
 
 # move container to output
-bindsym Mod4+Shift+$left move container to output left
-bindsym Mod4+Shift+$right move container to output right
+bindsym Mod1+Shift+$left move container to output left
+bindsym Mod1+Shift+$right move container to output right
 
 
 # move workspace to ouput
-bindsym Mod4+$left move workspace to output left
-bindsym Mod4+$right move workspace to output right
+bindsym Mod1+$left move workspace to output left
+bindsym Mod1+$right move workspace to output right
 
 #swap workspaces on outputs
 
-bindsym Mod4+Tab move workspace to output left; workspace next_on_output; move workspace to output right;
-bindsym Mod4+Shift+Tab move workspace to output right; workspace next_on_output; move workspace to output left;
+bindsym Mod1+Tab move workspace to output left; workspace next_on_output; move workspace to output right;
+bindsym Mod1+Shift+Tab move workspace to output right; workspace next_on_output; move workspace to output left;
 
 # reload the configuration file
-bindsym Mod1+Shift+c reload
+bindsym Mod4+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym Mod1+Shift+v restart
+bindsym Mod4+Shift+v restart
 # exit i3 (logs you out of your X session)
-bindsym Mod1+Shift+m exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym Mod4+Shift+m exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -212,7 +212,7 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 
-bindsym Mod1+m mode "resize"
+bindsym Mod4+m mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -300,7 +300,7 @@ bindsym Mod1+Mod4+l exec --no-startup-id pavucontrol
 bindsym Mod1+Mod4+j exec --no-startup-id steam
 
 # 1080p-settings
-bindsym Mod4+l exec --no-startup-id i3lock -i ~/.config/i3/i3locked1920x1080.jpg
+bindsym Mod1+l exec --no-startup-id i3lock -i ~/.config/i3/i3locked1920x1080.jpg
 
 # X220 settings
 #bindsym Mod4+l exec --no-startup-id i3lock -i ~/.config/i3/i3locked1366x768.png
