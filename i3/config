@@ -71,6 +71,9 @@ bindsym Mod4+Shift+a kill
 bindsym Mod4+Shift+d exec bemenu-run
 bindsym Mod4+space exec rofi -show run
 exec --no-startup-id xrdb ~/.Xresources
+
+bindsym XF86Calculator exec rofi -show calc
+
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -321,7 +324,11 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 
-bindsym Mod4+BackSpace mode "$mode_system"
+#bindsym Mod4+BackSpace mode "$mode_system"
+
+# new powermenu from github.com/adi1090x/rofi ("plugins" for rofi)
+bindsym Mod4+BackSpace exec --no-startup-id ~/.config/rofi/bin/menu_powermenu
+
 
 # NO screensaver
 exec --no-startup-id xset s noblank
