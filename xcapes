@@ -2,7 +2,7 @@
 #dependencies: xmodmap xcape
 
 # clear mappings
-setxkbmap -option grp:switch,grp:lctrl_lwin_toggle,grp_led:caps -layout us,de -variant ,qwerty
+setxkbmap -option grp:switch,grp:lctrl_lwin_toggle,grp:shifts_toggle,grp_led:caps -layout us,de -variant ,qwerty
 
 # do the magic
 #xmodmap -e 'clear Lock'
