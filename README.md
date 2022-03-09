@@ -1,4 +1,8 @@
-#
+# serenity
+
+arch linux 
+
+
 My dotfiles
 Hi.
 
@@ -6,8 +10,6 @@ This is my dotfiles backup archive.
 
 Favorite basic tools:
 
-  - [oh-my-zsh](http://ohmyz.sh/)
-
+  - [fish](fishshell.com)
   - [neovim](https://neovim.io)
-  
-  - [kitty](https://sw.kovidgoyal.net/kitty/)
+  - [lxterminal](https://github.com/lxde/lxterminal)
