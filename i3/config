@@ -72,7 +72,8 @@ bindsym Mod4+Shift+d exec bemenu-run
 bindsym Mod4+space exec rofi -show run
 exec --no-startup-id xrdb ~/.Xresources
 
-bindsym XF86Calculator exec rofi -show calc
+bindsym XF86Calculator exec rofi -show calc -modi calc -no-show-match -no-sort
+bindsym Mod1+Mod4+c exec rofi -show calc -modi calc -no-show-match -no-sort
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
