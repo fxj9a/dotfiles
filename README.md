@@ -11,7 +11,7 @@ This is my dotfiles backup archive.
 Favorite basic tools:
 
   - [fish](fishshell.com)
-  - [neovim](https://neovim.io)
+  - [neovim](https://neovim.io) | [NvChad](nvchad.com)
   - [lxterminal](https://github.com/lxde/lxterminal)
 
 Suckless configuration repositories:
