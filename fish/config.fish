@@ -17,3 +17,5 @@ end
 #  	kaput $k_mycommand
 #  end
 #end
+pyenv init - | source
+
