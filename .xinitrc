@@ -1,5 +1,6 @@
 dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
 
 slstatus &
-./xcapes &
+xfce4-power-manager &
+/home/adrian/xcapes &
 exec dwm
