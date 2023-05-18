@@ -6,3 +6,4 @@ if status is-login
 	bash -c "~/.zprofile"
 end
 
+fish_vi_key_bindings
