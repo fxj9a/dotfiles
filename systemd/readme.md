@@ -4,5 +4,5 @@
 
 - install slock (no configuration necessary. just use the repo package)
 - sudo copy `wakelock@.service` to `/etc/systemd/system/`
-- `sudo systemctl enable wakelock@$USER` --now
+- `sudo systemctl enable wakelock@$USER --now`
 
