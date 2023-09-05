@@ -5,7 +5,7 @@ This is my dotfiles backup archive.
 
 Each hostname has its own branch.
 
-The master branch is the (empty) blueprint for future branches.
+The master branch is the (empty) blueprint for future branches (maybe someday).
 
 ## TODO
 
@@ -17,7 +17,6 @@ git config --global alias.yolo '!git commit -am "_ `curl -s https://whatthecommi
 ```
 
 ## Branches (active)
-- mimax
 - serenity
+- unicorn
 - kogata
-
