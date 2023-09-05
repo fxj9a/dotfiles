@@ -14,6 +14,7 @@ I use:
 ## unicorn
 Dell Latitude E7450
 
+```
                   -`                    adrian@unicorn 
                   .o+`                   -------------- 
                  `ooo/                   OS: Arch Linux x86_64 
@@ -35,3 +36,4 @@ Dell Latitude E7450
  .`                                 `/   Network: Wifi
                                          Bluetooth: Intel Corp. Bluetooth wireless interface
                                          BIOS: Dell Inc. 65.24 (04/11/2020)
+```
