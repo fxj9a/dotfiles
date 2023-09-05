@@ -5,35 +5,33 @@ This is my dotfiles backup archive.
 
 I use: 
 
-  - [oh-my-zsh](http://ohmyz.sh/) | zsh
+  - fish
 
-  - [pivotal/vim-config](https://github.com/pivotal/vim-config) | vim
+  - neovim with AstroNVIM
 
-  - [py3status](https://github.com/ultrabug/py3status) | i3
+  - [dwm](https://gitlab.com/fxj9a/dwm)
   
-## kogata
-Lenovo ThinkPad X220
-```
-                                         adrian@kogata 
-                   -`                    ------------- 
-                  .o+`                   OS: Arch Linux x86_64 
-                 `ooo/                   Host: 4290PH3 ThinkPad X220 
-                `+oooo:                  Kernel: 6.3.2-zen1-1-zen 
-               `+oooooo:                 Uptime: 48 mins 
-               -+oooooo+:                Packages: 972 (pacman) 
-             `/:-:++oooo+:               Shell: fish 3.6.1 
-            `/++++/+++++++:              Resolution: 1366x768 @ 60.00Hz 
-           `/++++++++++++++:             WM: dwm 
-          `/+++ooooooooooooo/`           Theme: Adapta-Nokto-Eta [GTK2/3] 
-         ./ooosssso++osssssso+`          Icons: Adwaita [GTK2/3] 
-        .oossssso-````/ossssss+`         Cursor: Adwaita [GTK2/3] 
-       -osssssso.      :ssssssso.        Terminal: lxterminal 
-      :osssssss/        osssso+++.       Terminal Font: Terminus 12 
-     /ossssssss/        +ssssooo/-       CPU: Intel i5-2410M (4) @ 2.9GHz 
-   `/ossssso+/:-        -:/+osssso+-     GPU: Intel 2nd Generation Core Processor Family 
-  `+sso+:-`                 `.-/+oso:    Memory: 1.25 GiB / 7.64 GiB (16%) 
- `++:.                           `-/+/   Network: Wifi 
- .`                                 `/   BIOS: LENOVO 1.40 (05/14/2015) 
+## unicorn
+Dell Latitude E7450
 
-
-```
+                  -`                    adrian@unicorn 
+                  .o+`                   -------------- 
+                 `ooo/                   OS: Arch Linux x86_64 
+                `+oooo:                  Host: Latitude E7450 
+               `+oooooo:                 Kernel: 6.4.12-zen1-1-zen 
+               -+oooooo+:                Uptime: 1 hour, 16 mins 
+             `/:-:++oooo+:               Packages: 1248 (pacman), 221 (nix-user), 48 (nix-default) 
+            `/++++/+++++++:              Shell: fish 3.6.1 
+           `/++++++++++++++:             Resolution: 1920x1080 @ 60.05Hz 
+          `/+++ooooooooooooo/`           WM: dwm 
+         ./ooosssso++osssssso+`          Theme: Breeze-Dark [GTK2/3] 
+        .oossssso-````/ossssss+`         Icons: Adwaita [GTK2/3] 
+       -osssssso.      :ssssssso.        Cursor: Adwaita [GTK2/3] 
+      :osssssss/        osssso+++.       Terminal: lxterminal 
+     /ossssssss/        +ssssooo/-       Terminal Font: Terminus 12 
+   `/ossssso+/:-        -:/+osssso+-     CPU: Intel i7-5600U (4) @ 3.2GHz 
+  `+sso+:-`                 `.-/+oso:    GPU: Intel HD Graphics 5500 
+ `++:.                           `-/+/   Memory: 1.58 GiB / 15.48 GiB (10%) 
+ .`                                 `/   Network: Wifi 
+                                         Bluetooth: Intel Corp. Bluetooth wireless interface 
+                                         BIOS: Dell Inc. 65.24 (04/11/2020) 
