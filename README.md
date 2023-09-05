@@ -32,6 +32,6 @@ Dell Latitude E7450
    `/ossssso+/:-        -:/+osssso+-     CPU: Intel i7-5600U (4) @ 3.2GHz 
   `+sso+:-`                 `.-/+oso:    GPU: Intel HD Graphics 5500 
  `++:.                           `-/+/   Memory: 1.58 GiB / 15.48 GiB (10%) 
- .`                                 `/   Network: Wifi 
-                                         Bluetooth: Intel Corp. Bluetooth wireless interface 
-                                         BIOS: Dell Inc. 65.24 (04/11/2020) 
+ .`                                 `/   Network: Wifi
+                                         Bluetooth: Intel Corp. Bluetooth wireless interface
+                                         BIOS: Dell Inc. 65.24 (04/11/2020)
