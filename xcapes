@@ -1,8 +1,11 @@
 #!/bin/bash
 #dependencies: xmodmap xcape
+# Known issues:
+# After system update script needs to be called again.
 
 # clear mappings
 setxkbmap -option grp:switch,grp:shifts_toggle,grp_led:caps us,de
+echo "Keyboard options: shift keys together toggle us,de and use CapsLock LED as indicator for de"
 
 # do the magic
 xmodmap -e 'clear Lock'
@@ -11,3 +14,16 @@ xmodmap -e 'add Control = Control_L'
 # make fake esc key to be mapped with xcape
 xmodmap -e 'keycode 999 = Escape'
 xcape -e 'Control_L=Escape'
+echo "CapsLock remapped to Control/Escape"
+
+# remap page up/down to page back / forward
+#xmodmap -e 'XF86Forward = keycode 117'
+#xmodmap -e 'XF86Back = keycode 112'
+#echo "Remapped Pageup/down to Back and Forward"
+
+if pgrep -x xfce-polkit >/dev/null; then
+	echo "polkit already running"
+else
+	/usr/lib/xfce-polkit/xfce-polkit &
+	echo started polkit
+fi
