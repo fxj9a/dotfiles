@@ -8,13 +8,14 @@ setxkbmap -option grp:switch,grp:shifts_toggle,grp_led:caps us,de
 echo "Keyboard options: shift keys together toggle us,de and use CapsLock LED as indicator for de"
 
 # do the magic
-xmodmap -e 'clear Lock'
-xmodmap -e 'keycode 66 = Control_L'
-xmodmap -e 'add Control = Control_L'
-# make fake esc key to be mapped with xcape
-xmodmap -e 'keycode 999 = Escape'
-xcape -e 'Control_L=Escape'
-echo "CapsLock remapped to Control/Escape"
+# 2023-09-11 REPLACED WITH keyd
+#xmodmap -e 'clear Lock'
+#xmodmap -e 'keycode 66 = Control_L'
+#xmodmap -e 'add Control = Control_L'
+## make fake esc key to be mapped with xcape
+#xmodmap -e 'keycode 999 = Escape'
+#xcape -e 'Control_L=Escape'
+#echo "CapsLock remapped to Control/Escape"
 
 # remap page up/down to page back / forward
 #xmodmap -e 'XF86Forward = keycode 117'

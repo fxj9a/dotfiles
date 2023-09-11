@@ -10,6 +10,8 @@ I use:
   - neovim with AstroNVIM
 
   - [dwm](https://gitlab.com/fxj9a/dwm)
+
+  - [keyd](https://github.com/rvaiya/keyd)
   
 ## unicorn
 Dell Latitude E7450
