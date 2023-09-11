@@ -9,7 +9,7 @@ I use:
 
   - neovim with AstroNVIM
 
-  - [dwm](https://gitlab.com/fxj9a/dwm)
+  - [dwm](https://gitlab.com/fxj9a/dwm) or Hyprland with HybridBar
 
   - [keyd](https://github.com/rvaiya/keyd)
   
