@@ -8,10 +8,10 @@
     "experimental": true,
     "expand_left": true,
     "cava_bars": 7,
-    "r": 10,
-    "g": 20,
-    "b": 39,
-    "a": 1.0
+    "r": 40,
+    "g": 30,
+    "b": 90,
+    "a": 0.8
   },
   "variables": {
     "@volume": "echo $(pactl get-sink-volume @DEFAULT_SINK@ | rg -o '[0-9]{1,3}%' | head -n 1 | cut -d '%' -f 1)%",
