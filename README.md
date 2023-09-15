@@ -10,8 +10,8 @@ This is my dotfiles backup archive.
 
 Favorite basic tools:
 
-  - [fish](fishshell.com)
-  - [neovim](https://neovim.io) | [NvChad](nvchad.com)
+  - [fish](fishshell.com), fisher plugin manager
+  - [neovim](https://neovim.io) | AstroNVim
   - [lxterminal](https://github.com/lxde/lxterminal)
 
 Suckless configuration repositories:
