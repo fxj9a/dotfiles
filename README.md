@@ -12,6 +12,8 @@ I use:
   - [dwm](https://gitlab.com/fxj9a/dwm) or Hyprland with waybar
 
   - [keyd](https://github.com/rvaiya/keyd)
+
+  - alacritty or lxterminal
   
 ## citadell
 Dell Latitude E7450

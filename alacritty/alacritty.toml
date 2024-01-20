@@ -1,0 +1,37 @@
+live_config_reload = true
+import = [
+  "~/.config/alacritty/themes/themes/github_dark_high_contrast.toml"
+]
+[window]
+padding = {x = 4, y = 0}
+dynamic_padding = true
+decorations = "None"
+opacity = 0.9
+startup_mode = "Windowed"
+dynamic_title = true
+
+[scrolling]
+history = 50000
+multiplier = 4
+
+[font]
+normal = { family = "Terminus"}
+size = 15
+
+[bell]
+animation = "EaseOutSine"
+duration = 1
+command = "None"
+
+[selection]
+save_to_clipboard = true
+
+[cursor]
+style = { shape = "Block", blinking = "Never"}
+vi_mode_style = { shape = "Underline", blinking = "Off"}
+unfocused_hollow = true
+thickness = 0.2
+
+[mouse]
+hide_when_typing = true
+
