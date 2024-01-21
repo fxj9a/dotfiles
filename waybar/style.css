@@ -83,12 +83,13 @@ button:hover {
 #pulseaudio,
 #wireplumber,
 #custom-media,
+#custom-wgvpn,
 #tray,
 #mode,
 #idle_inhibitor,
 #scratchpad,
 #mpd {
-    padding: 0 10px;
+    padding: 0 7px;
     color: #ffffff;
 }
 
@@ -196,6 +197,10 @@ label:focus {
 
 #custom-media.custom-vlc {
     background-color: #ffa000;
+}
+
+#custom-wgvpn {
+    background-color: #88171a
 }
 
 #temperature {

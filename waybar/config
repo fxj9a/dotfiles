@@ -1,13 +1,13 @@
 {
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 13, // Waybar height (to be removed for auto height)
+    //"height": 13, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 1, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces", "custom/media"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["idle_inhibitor", "network", "cpu", "memory", "disk#2", "disk", "backlight", "pulseaudio", "battery", "battery#bat2", "clock", "tray"],
+    "modules-right": ["idle_inhibitor", "network", "custom/wgvpn", "cpu", "memory", "disk#2", "disk", "backlight", "pulseaudio", "battery", "battery#bat2", "clock", "tray"],
     // Modules configuration
     // "hyprland/workspaces": {
     //     "disable-scroll": true,
@@ -177,6 +177,11 @@
         "escape": true,
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    },
+    "custom/wgvpn": {
+        "format": "{} 🛡️",
+        "exec": "ip link | grep POINTOPOINT | awk -F: '{print $2}'",
+        "interval": 5
     }
 }
 
