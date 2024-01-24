@@ -119,7 +119,10 @@
     "backlight": {
         // "device": "acpi_video1",
         "format": "{percent}% {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "reverse-scrolling": true,
+        "scroll-step": 0.5
+
     },
     "battery": {
         "states": {
@@ -164,7 +167,8 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "pavucontrol",
+        "reverse-scrolling": true
     },
     "custom/media": {
         "format": "{icon} {}",
