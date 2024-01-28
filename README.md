@@ -18,5 +18,4 @@ git config --global alias.yolo '!git commit -am "_ `curl -s https://whatthecommi
 
 ## Branches (active)
 - [serenity](../serenity)
-- [unicorn](../unicorn)
-- [kogata](../kogata)
+- [unicorn](../citadell)
