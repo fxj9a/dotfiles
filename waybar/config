@@ -1,5 +1,5 @@
 {
-    // "layer": "top", // Waybar at top layer
+    "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     //"height": 13, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
@@ -36,9 +36,9 @@
             "unlocked": ""
         }
     },
-    "hyprland/mode": {
-        "format": "<span style=\"italic\">{}</span>"
-    },
+    //"hyprland/mode": {
+    //    "format": "<span style=\"italic\">{}</span>"
+    //},
     "hyprland/scratchpad": {
         "format": "{icon} {count}",
         "show-empty": false,
@@ -87,7 +87,8 @@
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format": "{:%Y-%m-%d %H:%M}",
-        "format-alt": "{:%Y-%m-%d}"
+        "format-alt": "{:%Y-%m-%d %H:%M}",
+        "on-click": "swaync-client -t -sw"
     },
     "cpu": {
         "format": "{usage}% cpu",
