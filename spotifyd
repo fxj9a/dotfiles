@@ -1,6 +1,6 @@
 [global]
 username = "eidoriandesu"
-password_cmd = "pass spotify.com/eidoriandesu"
+password_cmd = "pass www.spotify.com | head -1"
 use_keyring = false
 use_mpris = true
 backend = "pulseaudio"

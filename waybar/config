@@ -42,16 +42,16 @@
       "unlocked": ""
     }
   },
-  "hyprland/mode": {
-    "format": "<span style=\"italic\">{}</span>"
-  },
-  "hyprland/scratchpad": {
-    "format": "{icon} {count}",
-    "show-empty": false,
-    "format-icons": ["", ""],
-    "tooltip": true,
-    "tooltip-format": "{app}: {title}"
-  },
+  //"hyprland/mode": {
+  //  "format": "<span style=\"italic\">{}</span>"
+  //},
+  //"hyprland/scratchpad": {
+  //  "format": "{icon} {count}",
+  //  "show-empty": false,
+  //  "format-icons": ["", ""],
+  //  "tooltip": true,
+  //  "tooltip-format": "{app}: {title}"
+  //},
   "mpd": {
     "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
     "format-disconnected": "Disconnected ",
@@ -93,7 +93,8 @@
     // "timezone": "America/New_York",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "format": "{:%Y-%m-%d %H:%M}",
-    "format-alt": "{:%Y-%m-%d}"
+    "format-alt": "{:%Y-%m-%d %H:%M}",
+    "on-click": "swaync-client -t -sw"
   },
   "cpu": {
     "format": "{usage}% cpu",
@@ -152,9 +153,9 @@
   "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface
     "format-wifi": "{essid} ({signalStrength}%) ",
-    "format-ethernet": "{ipaddr}/{cidr} ",
-    "tooltip-format": "{ifname} via {gwaddr} ",
-    "format-linked": "{ifname} (No IP) ",
+    "format-ethernet": "{ipaddr}/{cidr} ➰",
+    "tooltip-format": "{ifname} via {gwaddr} ➰",
+    "format-linked": "{ifname} (No IP) ➰",
     "format-disconnected": "Disconnected ⚠",
     "format-alt": "{ifname}: {ipaddr}/{cidr}"
   },
@@ -178,18 +179,6 @@
     "on-click": "pavucontrol",
     "reverse-scrolling": true
   },
-  "custom/media": {
-    "format": "{icon} {}",
-    "return-type": "json",
-    "max-length": 40,
-    "format-icons": {
-      "spotify": "",
-      "default": "🎜"
-    },
-    "escape": true,
-    "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-    // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
-  },
   "custom/wgvpn": {
     "format": "{} 🛡️",
     "exec": "ip link | grep POINTOPOINT | awk -F: '{print $2}'",
@@ -205,7 +194,7 @@
   "custom/media": {
     "format": "{}",
     "exec": "playerctl metadata -f '{{title}} - {{artist}}' -s | cut -c -24",
-    "interval": 10,
+    "interval": 5,
     "on-right-click": "playerctl next",
     "on-middle-click": "playerctl previous",
     "on-click": "playerctl play-pause"

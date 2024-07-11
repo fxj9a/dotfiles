@@ -1,7 +1,0 @@
- 19353244      0 lrwxrwxrwx   1 adrian   adrian         39 Jun 11 16:57 /home/adrian/.config/spotifyd -> /home/adrian/gitrepos/dotfiles/spotifyd
- 19353164      0 lrwxrwxrwx   1 adrian   adrian         37 Jun 11 16:59 /home/adrian/.config/xcapes -> /home/adrian/gitrepos/dotfiles/xcapes
- 19353218      0 lrwxrwxrwx   1 adrian   adrian         34 Jun 11 16:49 /home/adrian/.config/i3 -> /home/adrian/gitrepos/dotfiles/i3/
- 20194699      0 lrwxrwxrwx   1 adrian   adrian         35 Jun 11 16:57 /home/adrian/.config/nvim/nvim -> /home/adrian/gitrepos/dotfiles/nvim
- 19353219      0 lrwxrwxrwx   1 adrian   adrian         41 Jun 11 16:56 /home/adrian/.config/kitty.conf -> /home/adrian/gitrepos/dotfiles/kitty.conf
- 19401127      0 lrwxrwxrwx   1 adrian   adrian         36 Jun 11 16:57 /home/adrian/.vim/vimrc -> /home/adrian/gitrepos/dotfiles/vimrc
- 19279687      0 lrwxrwxrwx   1 adrian   adrian         37 Jun 11 17:00 /home/adrian/.zshrc -> /home/adrian/gitrepos/dotfiles/.zshrc
