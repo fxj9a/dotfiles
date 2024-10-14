@@ -26,7 +26,7 @@ enable_notify = false
 enable_cover_image_cache = true
 default_device = "spotify-player"
 notify_streaming_only = false
-seek_duration_secs = 5
+seek_duration_secs = 10
 
 [notify_format]
 summary = "{track} • {artists}"
