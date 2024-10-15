@@ -1,9 +1,13 @@
-profile {
+profile ld_corner {
+    output eDP-1 disable
+    output "Lenovo Group Limited T24i-30 VTQ73899" mode  1920x1080 position 0,0
+    output "Lenovo Group Limited T24i-30 VTQ73876" mode  1920x1080 position 1920,0
+}
+profile ap_desk {
     output eDP-1 disable
     output DVI-I-2 mode  1920x1080@75.03Hz 
     output DVI-I-1 mode  1920x1080@75.03Hz
 }
-
-profile {
+profile mobile {
     output eDP-1 enable scale 1.666667
 }
