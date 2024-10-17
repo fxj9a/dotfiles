@@ -5,9 +5,9 @@ profile ld_corner {
 }
 profile ap_desk {
     output eDP-1 disable
-    output DVI-I-2 mode  1920x1080@75.03Hz 
-    output DVI-I-1 mode  1920x1080@75.03Hz
+    output "Lenovo Group Limited T24t-20 VKKZ1892" mode 1920x1080@74.97Hz position 0,0
+    output "Lenovo Group Limited T24t-20 VKKZ2740" mode 1920x1080@74.97Hz position 1920,0
 }
 profile mobile {
-    output eDP-1 enable scale 1.666667
+    output eDP-1 enable scale 2
 }
