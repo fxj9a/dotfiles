@@ -8,6 +8,15 @@ profile ap_desk {
     output "Lenovo Group Limited T24t-20 VKKZ1892" mode 1920x1080@74.97Hz position 0,0
     output "Lenovo Group Limited T24t-20 VKKZ2740" mode 1920x1080@74.97Hz position 1920,0
 }
+profile ap_desk_t {
+    output eDP-1 disable
+    output "Lenovo Group Limited LEN T24d-10 V5FRZ087" mode 1920x1200 position 0,0
+    output "Lenovo Group Limited LEN T24d-10 V5FRZ104" mode 1920x1200 position 1920,0
+}
+profile home {
+    output eDP-1 disable
+    output "Microstep MAG274QRF-QD CA8A271500300" mode 2560x1440@120.00Hz position 0,0
+}
 profile mobile {
     output eDP-1 enable scale 2
 }
