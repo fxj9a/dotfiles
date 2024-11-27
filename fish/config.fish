@@ -10,3 +10,6 @@ pyenv init - | source
 abbr --add dtrx "aunpack"
 abbr --add egrep "grep -E"
 abbr --add sl "ls"
+abbr --add scrot "hyprshot -m region"
+abbr --add psh "poetry shell"
+abbr --add pingg "ping -c3 www.google.com"
