@@ -3,6 +3,20 @@ profile ld_corner {
     output "Lenovo Group Limited T24i-30 VTQ73899" mode  1920x1080 position 0,0
     output "Lenovo Group Limited T24i-30 VTQ73876" mode  1920x1080 position 1920,0
 }
+
+profile ld_mid {
+    output eDP-1 disable
+    output "Lenovo Group Limited T24i-2L VNA94LHB" mode  1920x1080 position 0,0
+    output "Lenovo Group Limited T24i-2L VNA94LGG" mode  1920x1080 position 1920,0
+}
+
+profile ld_trash {
+    output eDP-1 position 1920,1080
+    output "Lenovo Group Limited T24i-30 VTQ73866" mode 1920x1080 position 0,0
+    output "Lenovo Group Limited T24i-30 VTQ73879" mode 1920x1080 position 1920,0
+
+}
+
 profile ap_desk {
     output eDP-1 disable
     output "Lenovo Group Limited T24t-20 VKKZ1892" mode 1920x1080@74.97Hz position 0,0
