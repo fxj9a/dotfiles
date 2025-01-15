@@ -8,6 +8,7 @@
 #         ""     "                                        
 general {
 	disable_loading_bar = false
+  ignore_empty_input = true
 }
 background {
 	monitor =
@@ -20,12 +21,6 @@ input-field {
 		outer_color = rgb(151515)
 		inner_color = rgb(200, 200, 200)
 }
-
-auth {
-  pam:enabled = true
-  fingerprint:enabled = true
-}
-
 label {
 	monitor =
 		text = $TIME
