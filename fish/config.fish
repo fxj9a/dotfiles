@@ -17,9 +17,12 @@ abbr --add egrep "grep -E"
 abbr --add sl "ls"
 abbr --add scrot "hyprshot -m region"
 abbr --add psh "eval (poetry env activate)"
-abbr --add poac "eval (poetry env activate)" # type "deactivate" to deactivate
 abbr --add pingg "ping -c3 www.google.com"
 abbr --add fzim "lvim (fzf)"
+abbr --add nmtui "impala"
 
 # dune
 source $HOME/.local/share/dune/env/env.fish
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /home/afichtner/.lmstudio/bin
