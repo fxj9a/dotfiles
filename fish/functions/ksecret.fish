@@ -4,7 +4,7 @@ function ksecret --wraps=kubectl --description 'interactive secret from k8s deco
 
   kubectl get secrets -n $namespace --no-headers -o custom-columns=":metadata.name" | fzf --prompt "Secret Name: " | read secretname
 
-  kubectl get secret $secretname -n $namespace -o json | jq '.data | keys[]' | fzf -1 --prompt "Secret Key: " | tr -d \" | read secretkey
+  kubectl get secret $secretname -n $namespace -o json | jq -r '.data | keys[]' | fzf -1 --prompt "Secret Key: " | read secretkey
 
   kubectl get secret $secretname -n $namespace -o jsonpath="{.data.$secretkey}" | base64 -d
         
