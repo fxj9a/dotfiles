@@ -1,4 +1,4 @@
-# mimax
+# 🪦 mimax
 
 macOS
 
