@@ -11,7 +11,7 @@ profile ld_mid {
 }
 
 profile ld_trash {
-    output eDP-1 position 1920,1080
+    output eDP-1 disable
     output "Lenovo Group Limited T24i-30 VTQ73866" mode 1920x1080 position 0,0
     output "Lenovo Group Limited T24i-30 VTQ73879" mode 1920x1080 position 1920,0
 
@@ -22,6 +22,11 @@ profile ap_desk {
     output "Lenovo Group Limited T24t-20 VKKZ1892" mode 1920x1080@74.97Hz position 0,0
     output "Lenovo Group Limited T24t-20 VKKZ2740" mode 1920x1080@74.97Hz position 1920,0
 }
+profile ap_desk_grb_column_window {
+    output eDP-1 disable
+    output "Lenovo Group Limited T24t-20 VKNT0985" mode 1920x1080@74.97Hz position 0,0
+    output "Lenovo Group Limited T24t-20 VKNT0987" mode 1920x1080@74.97Hz position 1920,0
+}
 profile ap_desk_t {
     output eDP-1 disable
     output "Lenovo Group Limited LEN T24d-10 V5FRZ087" mode 1920x1200 position 0,0
@@ -29,7 +34,17 @@ profile ap_desk_t {
 }
 profile home {
     output eDP-1 disable
-    output "Microstep MAG274QRF-QD CA8A271500300" mode 2560x1440@120.00Hz position 0,0
+    output "Eizo Nanao Corporation FS2333 24047072" mode 1920x1080@60.00Hz position 0,0
+    output "Microstep MAG274QRF-QD CA8A271500300" mode 2560x1440@143.85Hz position 1920,0
+}
+profile ap_desk_hdmi {
+    output eDP-1 disable
+    output "Lenovo Group Limited T24t-20 VKKZ1892" mode 1920x1080@74.97Hz position 0,0
+}
+profile ap_desk_pdtk {
+    output eDP-1 disable
+    output "Lenovo Group Limited T24i-2L VNA9B4D4" mode 1920x1080 position 0,0
+    output "Lenovo Group Limited T24i-2L VNA93Y7N" mode 1920x1080 position 1920,0
 }
 profile mobile {
     output eDP-1 enable scale 2
