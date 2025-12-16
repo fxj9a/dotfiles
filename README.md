@@ -1,4 +1,4 @@
-# My dotfiles for nb-02
+# My dotfiles for nb-241
 
 ```
   ██████████████████████████████████████████████████████
@@ -29,16 +29,15 @@
   █████████████████████████████     ████████████████████
 ---------------
 OS: Arch Linux x86_64
-Host: 20TH001AGE (ThinkPad P1 Gen 3)
-Kernel: Linux 6.12.9-arch1-1
-Packages: 1146 (pacman)
-Shell: fish 4.1.2
-WM: Hyprland 0.52.0 (Wayland)
+Host: 20TH001GGE (ThinkPad P1 Gen 3)
+Kernel: Linux 6.17.9-arch1-1
+Packages: 1211 (pacman)
+Shell: fish 4.2.1
+WM: Hyprland 0.52.2 (Wayland)
 Cursor: Adwaita
-Terminal: foot 1.25.0 | tmux 3.5a
+Terminal: foot 1.25.0 | tmux 3.6a
 CPU: Intel(R) Core(TM) i9-10885H (16) @ 5.30 GHz
-GPU 1: NVIDIA Quadro T2000 Mobile / Max-Q [Discrete]
-GPU 2: Intel UHD Graphics @ 1.25 GHz [Integrated]
-Disk (/): 77.01 GiB / 951.85 GiBs
+GPU: Intel UHD Graphics @ 1.25 GHz [Integrated]
+Disk (/): 106.39 GiB / 951.85 GiBs
 Locale: en_US.UTF-8
 ```
