@@ -5,7 +5,7 @@
 #abbr --add wwgup "sudo wg-quick down vpnname"
 # ssh quick launchers
 #abbr --add ec2name "ssh <...>"
-# Org's container registry (AZURE_REGISTRY_NAME.azurecr.io)
-#set -x DOCKER_REGISTRY
+# Org's container registry
+#set -x DOCKER_REGISTRY organizationregistry.azurecr.io
 # name of azure container registry
-#set -x AZURE_REGISTRY_NAME
+#set -x AZURE_REGISTRY_NAME organizationregistry
