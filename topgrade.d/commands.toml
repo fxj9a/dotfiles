@@ -1,0 +1,2 @@
+[commands]
+"Pulumi" = "/usr/bin/curl -sSL https://get.pulumi.com | sh"
