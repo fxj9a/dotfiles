@@ -20,14 +20,17 @@
 }
 
 #workspaces button {
-  all: initial;
-  padding: 0 6px;
-  margin: 0 1.5px;
-  min-width: 9px;
+   all: unset;
+   padding: 0px 5px;
+   margin: 1px 1.5px;
+   min-width: 10px;
+   background-color: transparent;
+   border: 1px solid @background;
+   border-radius: 8px;
 }
 
 #workspaces button.active {
-  background-color: @foreground;
+  border-color: @foreground;
 }
 
 #workspaces button.empty {
@@ -36,6 +39,7 @@
 
 #workspaces button.urgent {
   background-color: #eb4d4b;
+  border-color: #eb4d4b;
 }
 
 #cpu,
@@ -73,7 +77,7 @@ tooltip {
 }
 
 #clock {
-  margin-left: 8.75px;
+  margin-left: 5px;
 }
 
 .hidden {
@@ -82,10 +86,20 @@ tooltip {
 
 #custom-screenrecording-indicator {
   min-width: 12px;
-  margin-left: 8.75px;
+  margin-left: 5px;
   font-size: 10px;
+  padding-bottom: 1px;
 }
 
 #custom-screenrecording-indicator.active {
+  color: #a55555;
+}
+
+#custom-voxtype {
+  min-width: 12px;
+  margin: 0 0 0 7.5px;
+}
+
+#custom-voxtype.recording {
   color: #a55555;
 }
