@@ -15,4 +15,4 @@ git config --global alias.yolo '!git commit -am "_ `curl -s https://whatthecommi
 
 ## Branches (active)
 - [serenity](../serenity)
-- [nb-02](../nb-02)
+- [nb-241](../nb-241)
